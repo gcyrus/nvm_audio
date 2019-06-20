@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$(curl https://raw.githubusercontent.com/njoerger/nvm_audio/master/nvm_audio.mp3 --output /tmp/audio.mp3)
-$(curl https://raw.githubusercontent.com/njoerger/nvm_audio/master/audio_hash --output /tmp/audio_hash)
+$(curl https://raw.githubusercontent.com/gcyrus/nvm_audio/master/nvm_audio.mp3 --output /tmp/audio.mp3)
+$(curl https://raw.githubusercontent.com/gcyrus/nvm_audio/master/audio_hash --output /tmp/audio_hash)
 
 shasum -a 512 /tmp/audio.mp3 | awk '{print $1}'
 
